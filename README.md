@@ -6,6 +6,7 @@ Spring Boot Template Application - This is a spring boot template application wh
 2. Tomcat (embedded)
 3. Java 8
 4. Maven Build Framework
+5. Java Persistence API and Apache Derby (for persistency)
 
 ## Configurations (Can be changed in src/main/resources/application.properties)
 | Name | Description | Default |
