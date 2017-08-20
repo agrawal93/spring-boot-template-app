@@ -23,6 +23,7 @@ Spring Boot Template Application - This is a spring boot template application wh
     {
       "name": <string - name of the company>,
       "description": <string - description of the company>,
+      "logo": <string - base64 encoded image>,
       "fundingDetails": [
         {
           "amount": <long - funding amount>,
@@ -53,6 +54,7 @@ Spring Boot Template Application - This is a spring boot template application wh
       "id": <string - companyId as in the url>,
       "name": <string - name of the company>,
       "description": <string - description of the company>,
+      "logo": <string - base64 encoded image>,
       "fundingDetails": [
         {
           "id": <int - funding id (if any)>,
