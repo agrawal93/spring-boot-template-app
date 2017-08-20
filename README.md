@@ -17,7 +17,65 @@ Spring Boot Template Application - This is a spring boot template application wh
 - `` GET `` List all the companies and their details: `` http://<host>:<port>/<base-path> ``
 - `` GET `` Details of a specific company: `` http://<host>:<port>/<base-path>/{companyId} ``
 - `` POST `` Create new company details: `` http://<host>:<port>/<base-path> ``
+  - Request Body:
+    ```
+    {
+      "name": <string - name of the company>,
+      "description": <string - description of the company>,
+      "fundingDetails": [
+        {
+          "amount": <long - funding amount>,
+          "date": <date - funding date>,
+          "stage": <string - stage>,
+          "investor": <string - investor>
+        }
+      ],
+      "markets": [
+        <string - markets>, ...
+      ],
+      "foundedOn": <date - founded on>,
+      "website": <string - link to website>,
+      "socialInformation": {
+        "email": <email>,
+        "phoneNumber": <phone>,
+        "linkedIn": <linkedIn profile>,
+        "twitter": <twitter handle>,
+        ...
+        <additional-key-value-pairs>
+      }
+    }
+    ```
 - `` PUT `` Update existing company details: `` http://<host>:<port>/<base-path>/{companyId} ``
+  - Request Body:
+    ```
+    {
+      "id": <string - companyId as in the url>,
+      "name": <string - name of the company>,
+      "description": <string - description of the company>,
+      "fundingDetails": [
+        {
+          "id": <int - funding id (if any)>,
+          "amount": <long - funding amount>,
+          "date": <date - funding date>,
+          "stage": <string - stage>,
+          "investor": <string - investor>
+        }
+      ],
+      "markets": [
+        <string - markets>, ...
+      ],
+      "foundedOn": <date - founded on>,
+      "website": <string - link to website>,
+      "socialInformation": {
+        "email": <email>,
+        "phoneNumber": <phone>,
+        "linkedIn": <linkedIn profile>,
+        "twitter": <twitter handle>,
+        ...
+        <additional-key-value-pairs>
+      }
+    }
+    ```
 - `` DELETE `` Delete existing company details: `` http://<host>:<port>/<base-path>/{companyId} ``
 
 ## How to run
