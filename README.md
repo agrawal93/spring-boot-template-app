@@ -1,4 +1,4 @@
-# spring-template-app
+# spring-boot-template-app
 Spring Boot Template Application - This is a spring boot template application which performs CRUD operations on company details.
 
 ## Technologies used
